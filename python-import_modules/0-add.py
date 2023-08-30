@@ -5,5 +5,5 @@ a = 1
 b = 2
 result = add(a, b)
 if __name__ == "__main__":
-    print("ii{} + {} = {}".format(a, b, result))
+    print("{} + {} = {}".format(a, b, result))
 
