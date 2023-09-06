@@ -5,4 +5,4 @@ def multiple_returns(sentence):
 		return lens, first
 	else:
 		first = sentence[0]
-		return lens, firstt
+		return lens, first
