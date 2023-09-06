@@ -1,7 +1,8 @@
 def multiple_returns(sentence):
 	lens = len(sentence)
 	if lens == 0:
-		return None
+		first = None
+		return lens, first
 	else:
 		first = sentence[0]
-		return lens, first
+		return lens, firstt
