@@ -64,7 +64,7 @@ class Square:
             Returns:
                 prints a square using #
         """
-        if self.__size < 0:
+        if self.__size <= 0:
             print(" ")
         else:
                 for _ in range(self.__size):
