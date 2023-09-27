@@ -30,7 +30,6 @@ class Square:
                     raises error if not an interger
                     raises error if valve not greater than 0    
         """
-        print('retriving the size')
         return self.__size
 
     @size.setter
