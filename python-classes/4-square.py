@@ -1,5 +1,5 @@
 """
-Creating a class named Square
+Creating a class named Square 
 """
 class Square:
     """
