@@ -3,5 +3,6 @@
 """
 
 class BaseGeometry:
-	""" class called BaseGeometry"""
 
+	""" class called BaseGeometry"""
+	pass
