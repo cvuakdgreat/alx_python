@@ -23,11 +23,6 @@ class BaseGeometry:
 		if value <= 0 :
 			raise ValueError("{} must be greater than 0".format(name))
 		
-	def ignore_init_subclass_methods(cls):
-    # Define a function to filter out methods starting with '__init_subclass__'
-	    return [attr for attr in dir('cls') if not attr.startswith('__init_subclass__')]
-	
-
 """creating a class called Rectangle"""
 
 class Rectangle(BaseGeometry):
@@ -46,3 +41,8 @@ class Rectangle(BaseGeometry):
 	
 	def __str__(self):
 		return ("[Rectangle] {}/{}".format(self.__width, self.__height))
+
+def ignore_init_subclass_methods(cls):
+    # Define a function to filter out methods starting with '__init_subclass__'
+	   return [attr for attr in dir('cls') if not attr.startswith('__init_subclass__')]
+	
