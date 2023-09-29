@@ -5,7 +5,7 @@ class BaseGeometry:
 	def __init__(self):
 		pass
 
-	def __dir__(cls) :
+	def __dir__(self) :
 		attributes = super().__dir__()
 
 		list_to_return = []
@@ -47,8 +47,6 @@ class Rectangle(BaseGeometry):
 		self.__width = width
 		self.__height = height
 
-	def __dir__(cls):
-		return super().__dir__()
 
 	def area(self):
 		return self.__width * self.__height
