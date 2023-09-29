@@ -39,4 +39,4 @@ class Rectangle(BaseGeometry):
 		return super().area()
 	
 	def __str__(self):
-		return super().__str__() + ("[Rectangle] {}/{}".format(self.__width, self.__height))
+		return ("[Rectangle] {}/{}".format(self.__width, self.__height))
