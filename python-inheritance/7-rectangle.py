@@ -1,8 +1,19 @@
 """	Creating a Class called BaseGeometry"""
+
 class BaseGeometry:
 	""" Class called Base Geometry"""
 	def __init__(self):
 		pass
+
+	def __dir__(cls) :
+		attributes = super().__dir__()
+
+		list_to_return = []
+
+		for attr in attributes:
+			if attr != "__init_subclass__":
+				list_to_return.append(attr)
+		return list_to_return
 	
 	def area(self):
 		""" method that raises a Exception"""
@@ -22,6 +33,7 @@ class BaseGeometry:
 			raise TypeError("{} must be an integer".format(name))
 		if value <= 0 :
 			raise ValueError("{} must be greater than 0".format(name))
+	
 		
 """creating a class called Rectangle"""
 
@@ -35,14 +47,15 @@ class Rectangle(BaseGeometry):
 		self.__width = width
 		self.__height = height
 
+	def __dir__(cls):
+		return super().__dir__()
+
 	def area(self):
 		return self.__width * self.__height
-
+	
 	
 	def __str__(self):
 		return ("[Rectangle] {}/{}".format(self.__width, self.__height))
 
-def ignore_init_subclass_methods(cls):
-    # Define a function to filter out methods starting with '__init_subclass__'
-	   return [attr for attr in dir('cls') if not attr.startswith('__init_subclass__')]
+
 	
