@@ -26,6 +26,7 @@ class BaseGeometry:
 """creating a class called Rectangle"""
 
 class Rectangle(BaseGeometry):
+	""" this is a subclass Rectangle that inherits from the super class Base Geometry """
 	def __init__(self, width, height):
 		self.__width = 0
 		self.__height = 0
