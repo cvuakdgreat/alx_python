@@ -26,7 +26,6 @@ class BaseGeometry:
 """creating a class called Rectangle"""
 
 class Rectangle(BaseGeometry):
-	""" this is a subclass Rectangle that inherits from the super class Base Geometry """
 	def __init__(self, width, height):
 		self.__width = 0
 		self.__height = 0
@@ -35,4 +34,8 @@ class Rectangle(BaseGeometry):
 		self.__width = width
 		self.__height = height
 
-
+	def area(self):
+		return super().area()
+	
+	def __str__(self):
+		return super().__str__() + ("[Rectangle] {}/{}".format(self.__width, self.__height))
