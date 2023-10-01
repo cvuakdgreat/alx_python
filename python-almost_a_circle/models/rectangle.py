@@ -2,7 +2,7 @@
 Module importing a class for a module
 """
 
-from base import Base
+from models.base import Base
 
 """
 Rectangle Module
